@@ -1,6 +1,8 @@
 # dillorc
 # Sample dillo initialization file.
 #
+# (NOTE: To use this file, place it in ~/.dillo/dillorc)
+#
 # Lines that start with a '#' are comments.
 # "#option=..." shows the built-in default.
 # "# option=..." is an additional example.
