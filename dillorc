@@ -390,8 +390,11 @@ ui_tab_bg_color=#b7beb7
 # Note: You could always paste the URL onto the URL box clear button.
 #middle_click_drags_page=YES
 
-# How much to scroll the window with each notch on the mouse wheel.
-#scroll_speed=64
+# How far to scroll the window for each increment of the mouse wheel.
+#scroll_speed=72
+
+# How much to amplify the movement of the mouse when drag-scrolling.
+#dragscroll_speed=3.0
 
 # Focus follows new Tabs.
 # You can hold SHIFT to temporarily revert this behaviour.

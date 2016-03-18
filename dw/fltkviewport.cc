@@ -29,6 +29,8 @@
 #include "../lout/msg.h"
 #include "../lout/debug.hh"
 
+#include "../src/prefs.h"
+
 using namespace lout;
 using namespace lout::object;
 using namespace lout::container::typed;
@@ -282,7 +284,10 @@ int FltkViewport::handle (int event)
       if (Fl::event_inside(this))
          Fl::remove_timeout(selectionScroll);
       if (dragScrolling) {
-         scroll(dragX - Fl::event_x(), dragY - Fl::event_y());
+         int dx = dragX - Fl::event_x(), 
+             dy = dragY - Fl::event_y();
+         // scroll( dx * ::prefs.dragscroll_speed, dy * ::prefs.dragscroll_speed );
+         scroll( dx * 3.0, dy * 3.0 );
          dragX = Fl::event_x();
          dragY = Fl::event_y();
          return 1;

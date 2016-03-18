@@ -72,6 +72,7 @@ typedef struct {
    bool_t focus_new_tab;
    double font_factor;
    double scroll_speed;
+   double dragscroll_speed;
    int32_t font_max_size;
    int32_t font_min_size;
    bool_t show_back;
